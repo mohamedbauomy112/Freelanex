@@ -1,0 +1,21 @@
+body{
+  background-color: rgb(27, 21, 61);
+}
+
+form{
+  margin: 267px;
+  color: aliceblue;
+
+}
+
+form input{
+  width: 300px;
+  border-radius: 20px;
+  margin-left: 50px;
+}
+
+form button{
+  border-radius: 20px;
+  width: 100px;
+  margin-left: 180px;
+}

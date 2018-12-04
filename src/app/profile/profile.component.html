@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title></title>
+  <script src="../../../node_modules/chart.js/src/chart.js"></script>
+</head>
+<body>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container"> <!-- start container -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#ournavbar">
+                    <span class="sr-only">Toggle Navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Freelanex</a>
+            </div>
+
+            <div class="collapse navbar-collapse" id="ournavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="active">Token Balance: {{tokenBalnce}} FLX </li>
+                    <li>Etheruem Balance: {{etherBalance}} ETH</li>
+                    <li>{{username}}</li>
+
+                    <li> <button (click)="logout()" ><i class="	fa fa-power-off"></i> Logout</button> </li>
+                </ul>
+
+            </div>
+
+        </div><!-- End our container -->
+    </nav> <!-- End nav -->
+
+    <div>
+        <div id="sidebar-nav" class="sidebar">
+          <div class="sidebar-scroll">
+
+            <nav>
+              <ul class="nav">
+                <li><a routerLink="/profile" class="active"><i class="lnr lnr-home"></i> <span> Dashboard</span></a></li>
+                <li><a routerLink="/wallet"><i class="fa fa-credit-card" ></i> <span> Wallet</span></a></li>
+                <li><a routerLink="/transaction"><i class="fa fa-exchange"></i> <span> Transactions</span></a></li>
+                <li><button (click)="logout()" ><i class="	fa fa-power-off"></i> Logout</button></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+
+        <div class="right">
+
+          <section>
+            <div class="distributed">
+              <div style="display: block" class="bar_chart">
+                <canvas baseChart
+                        [datasets]="barChartData"
+                        [labels]="barChartLabels"
+                        [options]="barChartOptions"
+                        [legend]="barChartLegend"
+                        [chartType]="barChartType"
+                        (chartHover)="chartHovered($event)"
+                        (chartClick)="chartClicked($event)">
+                </canvas>
+              </div>
+              <div style="display: block" class="pie_chart">
+                <canvas baseChart
+                [data]="doughnutChartData"
+                [labels]="doughnutChartLabels"
+                [chartType]="doughnutChartType"
+                (chartHover)="chartHovered($event)"
+                (chartClick)="chartClicked($event)"></canvas>
+              </div>
+            </div>
+          </section>
+          <section>
+            <div class="buy-token">
+              Tokens: <input type="number" id="token" #box (keyup)="onKey(box.value)" > = {{val}}
+              <label id="ether">
+              <select class="form-control coincalc" (change)="cointype($event)">
+                <option>Select</option>
+                <option value="ETH">ETH</option>
+                <option value="BIT">BIT</option>
+                <option value="DOL">DOL</option>
+              </select>
+            </label><br><hr>
+              Wallet address: <input type="text" class="wallet">
+              <hr>
+              <button class="btn btn-primary" (click)="buy()" >Buy Token Now</button>
+              <span>Select Method Buy:</span>
+               <select class="form-control" id="exampleFormControlSelect1" (change)="selectoption($event)" >
+                  <option value="Select Now!">Select Now!</option>
+                  <option value="Meta Mask">Meta Mask</option>
+                  <option value="My Ether Wallet">My Ether Wallet</option>
+                  <option value="Other Ways">Other Ways</option>
+                </select>
+            </div>
+          </section>
+
+
+          <section >
+            <div class="tokenBar">
+              <h4>TOKEN SALE PROGRESS</h4>
+              <span>0 $</span> <span class="max">5M $</span>
+                <progress class="progress progress-bar progress-bar-striped progress-bar-animated" role="progressbar" value={{progress}} max="2000000000000000000"> {{progress}} </progress><br>
+                <span>Distributed </span> <span class="contributed">Contributed</span>
+                <br>
+                <span>6,235,125 CIC</span> <span class="coinn">5478 ETH | 80 BTC</span>
+            </div>
+
+            <div>
+
+            </div>
+          </section>
+
+        </div>
+        </div>
+
+</body>
+</html>
+
+
+
+
+

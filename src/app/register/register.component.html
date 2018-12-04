@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+
+
+    <div class="signup-form">
+        <form [formGroup]="registerForm">
+        <h2>Register</h2>
+        <p class="hint-text">Create your account. It's free and only takes a minute.</p>
+
+            <div class="form-group">
+              <input formControlName="email" type="email" name="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter Your Email" required>
+            </div>
+            <div class="form-group">
+                <input formControlName="username" type="text" name="name" class="form-control" id="name" placeholder="Enter Username" required>
+              </div>
+        <div class="form-group">
+            <input formControlName="password" type="password" name="password" class="form-control" id="password" placeholder="Password" required>
+          </div>
+        <div class="form-group">
+            <input formControlName="cpass" type="password" name="password" class="form-control" id="password2" placeholder="Confirm Password" required>
+          </div>
+
+        <div class="form-group">
+                <button type="submit" class="btn btn-success btn-lg btn-block" (click)="register()">Register Now <i class="fa fa-sign-in" aria-hidden="true"></i></button>
+        </div>
+        <div class="text-center">Already have an account? <a routerLink="/login">Sign in</a></div>
+        </form>
+
+    </div>
+
+    <!-- <div class="left">
+        <h1>Register In Our Community</h1>
+
+    </div>
+    <div class="right">
+        <form [formGroup]="registerForm" >
+            <div class="form-group">
+                <label for="email">Email address</label>
+                <input formControlName="email" type="email" name="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email" required>
+              </div>
+
+              <div class="form-group">
+                <label for="name">Username</label>
+                <input formControlName="username" type="text" name="name" class="form-control" id="name" placeholder="Enter Your Name" required>
+              </div>
+
+            <div class="form-group">
+              <label for="password">Password</label>
+              <input formControlName="password" type="password" name="password" class="form-control" id="password" placeholder="Password" required>
+            </div>
+
+            <div class="form-group">
+              <label for="password2">Confirm Password</label>
+              <input formControlName="cpass" type="password" name="password" class="form-control" id="password2" placeholder="Password" required>
+            </div>
+
+            <button type="submit" class="btn btn-primary" (click)="register()" >Register <i class="fa fa-sign-in" aria-hidden="true"></i></button>
+          </form>
+
+          <span>Have account?</span><br><a routerLink="/login"><button class="btn btn-outline-success">Login Now <i class="fa fa-sign-in" aria-hidden="true"></i> </button></a>
+    </div> -->
+
+
+</body>
+</html>

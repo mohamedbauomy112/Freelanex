@@ -1,0 +1,12 @@
+<body>
+    <div>
+        <form [formGroup]="resetForm" >
+          Enter Your Email : <input formControlName="email" type="email" class="form-control" id="email"  aria-describedby="emailHelp" placeholder="Enter email" required >
+          <br>
+          <br>
+          <br>
+          <button type="submit" class="btn btn-success" (click)="forget()" >Send</button>
+        </form>
+      </div>
+</body>
+

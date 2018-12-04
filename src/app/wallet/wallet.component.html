@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title></title>
+</head>
+<body>
+  <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container"> <!-- start container -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#ournavbar">
+                <span class="sr-only">Toggle Navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Freelanex</a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="ournavbar">
+            <ul class="nav navbar-nav navbar-right">
+                <li class="active">Token Balance: {{tokenBalnce}} FLX </li>
+                <li>Etheruem Balance: {{etherBalance}} ETH</li>
+                <li>{{username}}</li>
+                <li> <button (click)="logout()" ><i class="	fa fa-power-off"></i> Logout</button> </li>
+            </ul>
+
+        </div>
+
+    </div><!-- End our container -->
+</nav> <!-- End nav -->
+
+<div>
+    <div id="sidebar-nav" class="sidebar">
+      <div class="sidebar-scroll">
+        <nav>
+          <ul class="nav">
+            <li><a routerLink="/profile" class="active"><i class="lnr lnr-home"></i> <span> Dashboard</span></a></li>
+            <li><a routerLink="/wallet" class="active"><i class="fa fa-credit-card" ></i> <span> Wallet</span></a></li>
+            <li><a routerLink="/transaction"><i class="fa fa-exchange"></i> <span> Transactions</span></a></li>
+            <li><button (click)="logout()" ><i class="	fa fa-power-off"></i> Logout</button></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+    <div class="right">
+      <section class="address_section" >
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+              <div class="address">
+                <h3>Your Address Is : </h3>
+                <hr>
+                <span id="address">{{address}}</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section><hr>
+      <!--  -->
+      <section class="wallet_info">
+        <div class="container">
+          <div class="row">
+
+              <div class="ico_token">
+                <h4>ICO TOKENS</h4><br>
+                <img src="../../assets/img/ico.jpg" alt="ICO" ><br><br>
+                <span class="ico_num">254 FLX</span><br>
+                <hr>
+                <span class="token_left">CIC Token</span><span class="token_right"> 3,258 CIC</span><hr>
+                <span class="token_left">CIC Referral</span><span class="token_right"> 200.88 CIC</span><hr>
+                <span class="token_left">CIC Price</span><span class="token_right"> 0.0001 BTC</span><hr>
+                <span class="token_left">Raised BTC</span><span class="token_right">2154 BTC</span><hr>
+                <span class="token_left">Raised USD</span><span class="token_right">4.52 M</span>
+              </div>
+
+          </div>
+        </div>
+      </section>
+    </div>
+    </div>
+</body>
+</html>
+
+

@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
+  <meta charset="utf-8">
+  <title>Icoo</title>
+  <base href="/">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+  <link rel="stylesheet" href="assets/css/line-fonts.css">
+  <link rel="stylesheet" href="assets/css/hover-min.css">
+  <link rel="stylesheet" href="assets/css/animate.css">
+  <link rel="stylesheet" href="assets/css/circle.css">
+  <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="stylesheet" href="assets/css/normalize.css">
+  <link rel="stylesheet" href="assets/theme.css">
+</head>
+<body>
+    <div class="wrapp">
+
+      <app-root></app-root>
+
+
+    </div>
+    <a href="#" class="gototop fa fa-angle-up"></a>
+
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/bootstrap.min.js"></script>
+
+  <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> <!-- stats.js lib -->
+
+  <script src="assets/js/particles.js"></script>
+  <script src="assets/js/js.js"></script>
+
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/parallax.js"></script>
+
+  <script src="assets/js/TweenMax.min.js"></script>
+
+  <script src="assets/js/ScrollMagic.js"></script>
+
+  <script src="assets/js/animation.gsap.js"></script>
+
+  <script src="assets/js/Chart.js"></script>
+
+
+
+  <script>
+    var config = {
+      type: 'doughnut',
+      data: {
+        datasets: [{
+          data: [60, 30, 10],
+          backgroundColor: [
+            'rgba(54, 162, 235, 1)',
+            'rgba(255, 206, 86, 1)',
+            'rgb(153, 102, 255)'
+          ],
+          label: 'Dataset 1'
+        }],
+        labels: [
+          'Stabilising DOM',
+          'Development',
+          'Charities'
+        ]
+      },
+      options: {
+        responsive: true,
+        legend: {
+          position: 'left',
+          labels: {
+            boxWidth: 40,
+            padding: 20,
+          }
+        },
+        title: {
+          display: false,
+          text: 'Chart Title'
+        },
+        animation: {
+          animateScale: true,
+          animateRotate: true
+        }
+      }
+    };
+
+    window.onload = function() {
+      var ctx = document.getElementById('chart-area').getContext('2d');
+      window.myDoughnut = new Chart(ctx, config);
+    }
+  </script>
+</body>
+</html>

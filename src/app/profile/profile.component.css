@@ -1,0 +1,117 @@
+body{
+  background-color: #F4F5FA;
+}
+.navbar{
+  background-color: rgb(17, 39, 58);
+  color: aliceblue;
+  }
+
+  .navbar-header a{
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bolder;
+  }
+
+  .navbar-right li{
+    margin: 10px;
+    font-size: 15px;
+  }
+
+  .sidebar{
+    padding-top: 200px;
+    width: 15%;
+    text-align: center;
+    background-color: rgb(14, 14, 37);
+    color: aliceblue;
+    border-right: 1px black groove;
+    float: left;
+    position: fixed;
+
+  }
+  .sidebar li{
+    padding-bottom: 64px;
+  }
+  .sidebar li a:hover{
+    color: black;
+    background-color: rgb(36, 22, 73)
+  }
+  .sidebar span{color:aliceblue;font-size: large;font-weight: 600;padding-left: 10px;}
+
+
+  .logo{
+    width: 100px;
+    height: 100px;
+    margin-left: 80px;
+    margin-top: 60px;
+  }
+
+  .right{float:right;width:80%}
+  .right .distributed{
+    margin-top: 200px;
+    margin-bottom: 20px;
+    padding: 5px;
+  }
+  .right .distributed .bar_chart{
+    width: 60%;
+float: left;
+  }
+  .right .distributed .pie_chart{
+    width: 40%;
+    float: right;
+    margin-top: 50px;
+
+  }
+
+  .buy-token{
+
+    clear: both;
+    margin-top: 400px;
+    border: 2px groove black;
+    border-radius: 5px;
+    text-align: center;
+    margin-right: 60px;
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: white;
+  }
+  .buy-token input{margin-right: 20px;border-radius: 20px; width: 200px; margin-top: 30px;}
+  .buy-token label{margin-right: 0px;width: 210px;margin-top: 30px;}
+  .buy-token button {float: right;margin-right:30px;margin-bottom: 10px;border-radius: 20px;width: 25%}
+  .buy-token .wallet{width:300px;}
+  .buy-token select{width:50%; margin-left: 10px;margin-bottom: 5px;}
+  /* .buy-token .coincalc{width: 100px; margin-left: 100px} */
+  .buy-token span{float: left; margin-left: 10px;margin-right: 10px;font-weight: 700;}
+
+  .tokenBar{
+    width: 40%;
+    float: right;
+    padding: 10px;
+    background-color: aliceblue;
+    margin: 45px;
+    border-radius: 5px;
+    background-color: white;
+
+  }
+  .tokenBar h4{
+    text-align: center;
+  }
+  .tokenBar progress{
+
+    clear: both;
+    height:10px;
+    margin-top: 20px;
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: rgb(0, 0, 0) 10px 10px 20px;
+
+  }
+  .tokenBar .max{
+    float: right;
+  }
+  .tokenBar .contributed{
+    float: right;
+  }
+
+  .tokenBar .coinn{
+    float: right;
+  }

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Login</title>
+</head>
+<body>
+
+    <div class="signup-form">
+        <form [formGroup]="loginForm">
+        <h2>Login</h2>
+        <p class="hint-text">Login into your account. Be fun and only takes a second.</p>
+
+        <div class="form-group">
+            <input formControlName="email" type="email" class="form-control" id="email"  aria-describedby="emailHelp" placeholder="Enter email" required>
+          </div><br>
+
+          <div class="form-group">
+
+              <input formControlName="password" type="password" class="form-control" id="password" placeholder="Password" required>
+            </div><br>
+
+        <div class="form-group">
+                <button type="submit" class="btn btn-success btn-lg btn-block" (click)="login()">Login Now <i class="fa fa-sign-in" aria-hidden="true"></i></button>
+        </div>
+        <div class="text-center">Not have an account? <a routerLink="/register">Rigester</a></div>
+        </form>
+
+    </div>
+
+   <!--    <div class="left">
+          <h1>Login In Our Dream Community</h1>
+
+      </div>
+      <div class="right">
+          <form [formGroup]="loginForm">
+              <div class="form-group">
+                <label for="email">Email address</label>
+                <input formControlName="email" type="email" class="form-control" id="email"  aria-describedby="emailHelp" placeholder="Enter email" required>
+              </div><br>
+
+              <div class="form-group">
+                <label for="password">Password</label>
+                <input formControlName="password" type="password" class="form-control" id="password" placeholder="Password" required>
+              </div><br>
+
+              <button type="submit" class="btn btn-primary" (click)="login()" >Login <i class="fa fa-sign-in" aria-hidden="true"></i> </button>
+            </form>
+
+            <a routerLink="/forget" ><h5>Forget Password ?</h5></a>
+            <span>Not a member?</span><br><a routerLink="/register"><button class="btn btn-info">Register Now <i class="fa fa-sign-in" aria-hidden="true"></i> </button></a>
+      </div>
+ -->
+
+
+</body>
+</html>
+

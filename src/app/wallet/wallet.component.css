@@ -1,0 +1,89 @@
+body{
+  background-color: #F4F5FA;
+}
+.navbar{
+  background-color: rgb(17, 39, 58);
+  color: aliceblue;
+  }
+
+  .navbar-header a{
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bolder;
+  }
+
+  .navbar-right li{
+    margin: 10px;
+    font-size: 15px;
+  }
+
+  .sidebar{
+    padding-top: 200px;
+    width: 15%;
+    text-align: center;
+    background-color: rgb(14, 14, 37);
+    color: aliceblue;
+    border-right: 1px black groove;
+    float: left;
+    position: fixed;
+
+  }
+  .sidebar li{
+    padding-bottom: 64px;
+  }
+  .sidebar li a:hover{
+    color: black;
+    background-color: rgb(36, 22, 73)
+  }
+  .sidebar span{color:aliceblue;font-size: large;font-weight: 600;padding-left: 10px;}
+
+  .right{float:right;width:80%}
+  .right .address_section{
+    margin-top: 90px;
+    text-align: center;
+    padding: 10px;
+    width: 95%;
+  }
+  .right .address_section .address{
+    width:100%;
+    margin-left: 50px;
+  }
+  .right .address_section .address span{
+    color: red;
+    font-size: 20px;
+    border: 1px groove black;
+  }
+
+ .right .wallet_info{
+   width: 95%;
+   margin-top: 20px;
+  margin-right: 50px;
+padding: 5px;
+ }
+ .right .wallet_info .ico_token{
+   float: right;
+   width: 30%;
+   background-color: rgb(70, 72, 83);
+   color: aliceblue;
+   margin: 30px;
+   margin-right: 100px;
+   padding: 10px;
+ }
+ .right .wallet_info .ico_token h4{
+   text-align: center;
+ }
+ .right .wallet_info .ico_token img{
+   width:120px;
+   height: 120px;
+   border-radius: 50%;
+   margin-left: 110px;
+ }
+ .right .wallet_info .ico_token .ico_num{
+   text-align: center;
+   margin-left: 120px;
+   font-weight: bolder;
+   font-size: 20px;
+ }
+ .right .wallet_info .ico_token .token_right{
+   float: right;
+ }
