@@ -15,12 +15,12 @@
 
         <div class="form-group">
             <input formControlName="email" type="email" class="form-control" id="email"  aria-describedby="emailHelp" placeholder="Enter email" required>
-          </div><br>
+        </div><br>
 
           <div class="form-group">
-
-              <input formControlName="password" type="password" class="form-control" id="password" placeholder="Password" required>
-            </div><br>
+            <input formControlName="password" type="password" class="form-control" id="password" placeholder="Password" required>
+          </div>
+            <br>
 
         <div class="form-group">
                 <button type="submit" class="btn btn-success btn-lg btn-block" (click)="login()">Login Now <i class="fa fa-sign-in" aria-hidden="true"></i></button>
@@ -29,31 +29,6 @@
         </form>
 
     </div>
-
-   <!--    <div class="left">
-          <h1>Login In Our Dream Community</h1>
-
-      </div>
-      <div class="right">
-          <form [formGroup]="loginForm">
-              <div class="form-group">
-                <label for="email">Email address</label>
-                <input formControlName="email" type="email" class="form-control" id="email"  aria-describedby="emailHelp" placeholder="Enter email" required>
-              </div><br>
-
-              <div class="form-group">
-                <label for="password">Password</label>
-                <input formControlName="password" type="password" class="form-control" id="password" placeholder="Password" required>
-              </div><br>
-
-              <button type="submit" class="btn btn-primary" (click)="login()" >Login <i class="fa fa-sign-in" aria-hidden="true"></i> </button>
-            </form>
-
-            <a routerLink="/forget" ><h5>Forget Password ?</h5></a>
-            <span>Not a member?</span><br><a routerLink="/register"><button class="btn btn-info">Register Now <i class="fa fa-sign-in" aria-hidden="true"></i> </button></a>
-      </div>
- -->
-
 
 </body>
 </html>

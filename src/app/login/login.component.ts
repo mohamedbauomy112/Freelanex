@@ -21,7 +21,7 @@ export class LoginComponent implements OnInit {
   ngOnInit() {
   }
 
-  login(){
+  login(){ //loginbtn()
 
     if(!this.loginForm.valid){
       alert("Invalid Form Login"); return;

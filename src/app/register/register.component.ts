@@ -26,7 +26,7 @@ export class RegisterComponent implements OnInit {
   }
 
   register(){
-    if(!this.registerForm.valid/*  || (this.registerForm.controls.password.value != this.registerForm.controls.cpass.value) */){
+    if(!this.registerForm.valid){
       alert("Invalid form please check the form and try another"); return;
     }
     if(this.registerForm.controls.password.value != this.registerForm.controls.cpass.value){
