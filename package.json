@@ -55,7 +55,7 @@
     "ng2-charts": "^1.6.0",
     "ng2-translate": "^5.0.0",
     "node-gyp-install": "^2.2.0",
-    "nodemailer": "^4.6.8",
+    "nodemailer": "^6.4.16",
     "nodemailer-express-handlebars": "^3.0.0",
     "nodemailer-smtp-transport": "^2.7.4",
     "nodemon": "^1.18.4",
